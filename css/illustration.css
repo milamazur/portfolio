@@ -11,9 +11,7 @@ body {
 div {
   display: block;
 }
-img {
-  width: 200px;
-}
+
 /*all links*/
 a,
 a:link,
@@ -149,7 +147,7 @@ li {
   background-color: #f26b5d;
   border-right: #f26b5d 1px solid;
   border-bottom: #f26b5d 1px solid;
-  padding: 16px 48px;
+  padding: 16px 45px;
   font-weight: bold;
   margin: 0;
   margin-left: 100px;
@@ -163,45 +161,35 @@ li {
 }
 .vertical-line {
   border-left: 1px solid #f26b5d;
-  height: 600px;
+  height: 4800px;
   margin-left: 100px;
   float: left;
 }
-/*experience box*/
 
-.pink-button:link,
-.pink-button:hover,
-.pink-button:visited,
-.pink-button:active {
-  color: white;
-  background-color: #f26b5d;
-  border-right: #f26b5d 1px solid;
-  border-bottom: #f26b5d 1px solid;
-  padding: 16px 48px;
-  font-weight: bold;
+.text-block {
+  width: 460px;
+  text-align: left;
+  font-size: 10pt;
+  margin-left: 12%;
+  margin-top: 80px;
+  line-height: 25px;
 }
-.pink-button:hover {
-  opacity: 0.8;
+img {
+  margin-left: 24.5%;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  width: 40%;
 }
-
-.page-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-items: stretch;
-}
-
 .box-left {
   padding-top: 120px;
-  padding-left: 80px;
-  min-width: 500px;
+  padding-left: 60px;
+  min-width: 400px;
+  padding-right: 80px;
 }
 
 .box-right {
   padding: 0;
-  border-left: 1px solid #f26b5d;
-  border-right: 1px solid #f26b5d;
+  border: 1px solid #f26b5d;
   flex-shrink: 0;
 }
 .image-right {
@@ -218,7 +206,6 @@ li {
   height: 200px;
   padding: 10px;
 }
-
 .align-left {
   margin-left: 14px;
   margin-top: 10px;

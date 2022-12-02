@@ -11,9 +11,7 @@ body {
 div {
   display: block;
 }
-img {
-  width: 200px;
-}
+
 /*all links*/
 a,
 a:link,
@@ -121,18 +119,8 @@ li {
 
 /*main box*/
 
-.box-left p {
-  padding-left: 15%;
-  padding-right: 0%;
-}
 .pink-text {
   color: #f26b5d;
-}
-.maintext-link,
-.maintext-link:link,
-.maintext-link:visited {
-  font-weight: bold;
-  text-decoration: underline;
 }
 .page {
   padding-left: 65px;
@@ -144,31 +132,6 @@ li {
 
 /*top-left button*/
 
-.top-left-button {
-  color: white;
-  background-color: #f26b5d;
-  border-right: #f26b5d 1px solid;
-  border-bottom: #f26b5d 1px solid;
-  padding: 16px 48px;
-  font-weight: bold;
-  margin: 0;
-  margin-left: 100px;
-  width: 202px;
-}
-
-.horizontal-line {
-  height: 1px;
-  background: #f26b5d;
-  margin-left: 100px;
-}
-.vertical-line {
-  border-left: 1px solid #f26b5d;
-  height: 600px;
-  margin-left: 100px;
-  float: left;
-}
-/*experience box*/
-
 .pink-button:link,
 .pink-button:hover,
 .pink-button:visited,
@@ -179,59 +142,35 @@ li {
   border-bottom: #f26b5d 1px solid;
   padding: 16px 48px;
   font-weight: bold;
+  margin-left: 100px;
 }
 .pink-button:hover {
   opacity: 0.8;
 }
 
-.page-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-items: stretch;
+.horizontal-line {
+  height: 1px;
+  background: #f26b5d;
+  margin-left: 100px;
 }
-
-.box-left {
-  padding-top: 120px;
-  padding-left: 80px;
-  min-width: 500px;
-}
-
-.box-right {
-  padding: 0;
+.vertical-line {
   border-left: 1px solid #f26b5d;
-  border-right: 1px solid #f26b5d;
-  flex-shrink: 0;
-}
-.image-right {
-  float: right;
-  padding: 0;
-}
-.image-left {
+  height: 4900px;
+  margin-left: 100px;
   float: left;
-  padding: 0;
-}
-.square {
-  background-color: transparent;
-  width: 200px;
-  height: 200px;
-  padding: 10px;
 }
 
-.align-left {
-  margin-left: 14px;
-  margin-top: 10px;
-  margin-top: -5px;
-}
-.align-right {
-  text-align: right;
-  margin-right: 14px;
-  margin-top: -5px;
-}
-.small-letters {
+.text-block {
+  width: 300px;
+  text-align: center;
   font-size: 10pt;
+  margin-left: 41%;
+  margin-top: 80px;
+  line-height: 25px;
 }
-.big-letters {
-  font-size: 13pt;
+.images-style {
+  margin-left: 26.5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 36%;
 }

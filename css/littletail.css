@@ -33,7 +33,7 @@ a:active {
   top: 0%;
   left: 0%;
   bottom: 0%;
-  width: 181px;
+  width: 166px;
 }
 #menu-wrap {
   display: none;
@@ -44,9 +44,11 @@ a:active {
 
 ul {
   list-style: none;
+  font-size: 11pt;
+  padding-left: 35px;
 }
 li {
-  padding-top: 20px;
+  padding-top: 22px;
 }
 .navigation-left {
   background-color: white;
@@ -129,6 +131,21 @@ li {
 }
 
 /*top-left button*/
+.pink-button:link,
+.pink-button:hover,
+.pink-button:visited,
+.pink-button:active {
+  color: white;
+  background-color: #f26b5d;
+  border-right: #f26b5d 1px solid;
+  border-bottom: #f26b5d 1px solid;
+  padding: 16px 48px;
+  font-weight: bold;
+  margin-left: 100px;
+}
+.pink-button:hover {
+  opacity: 0.8;
+}
 
 .top-left-button {
   color: white;
@@ -160,6 +177,7 @@ li {
   font-size: 10pt;
   margin-left: 41%;
   margin-top: 80px;
+  line-height: 25px;
 }
 .images-style {
   margin-left: 15%;

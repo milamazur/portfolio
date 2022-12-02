@@ -33,7 +33,7 @@ a:active {
   top: 0%;
   left: 0%;
   bottom: 0%;
-  width: 181px;
+  width: 166px;
 }
 #menu-wrap {
   display: none;
@@ -44,9 +44,11 @@ a:active {
 
 ul {
   list-style: none;
+  font-size: 11pt;
+  padding-left: 35px;
 }
 li {
-  padding-top: 20px;
+  padding-top: 22px;
 }
 .navigation-left {
   background-color: white;
@@ -145,7 +147,7 @@ li {
   background-color: #f26b5d;
   border-right: #f26b5d 1px solid;
   border-bottom: #f26b5d 1px solid;
-  padding: 16px 48px;
+  padding: 16px 60px;
   font-weight: bold;
   margin: 0;
   margin-left: 100px;
@@ -170,12 +172,13 @@ li {
   font-size: 10pt;
   margin-left: 41%;
   margin-top: 80px;
+  line-height: 12px;
 }
 .images-style {
-  margin-left: 24.5%;
+  padding-left: 24.5%;
   padding-top: 60px;
   padding-bottom: 40px;
-  width: 40%;
+  width: 65%;
 }
 figure {
   padding: 4px;
@@ -186,4 +189,5 @@ figcaption {
   text-align: right;
   max-width: 500px;
   margin: 2px;
+  padding-left: 24.5%;
 }

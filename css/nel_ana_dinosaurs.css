@@ -33,7 +33,7 @@ a:active {
   top: 0%;
   left: 0%;
   bottom: 0%;
-  width: 181px;
+  width: 166px;
 }
 #menu-wrap {
   display: none;
@@ -44,9 +44,11 @@ a:active {
 
 ul {
   list-style: none;
+  font-size: 11pt;
+  padding-left: 35px;
 }
 li {
-  padding-top: 20px;
+  padding-top: 22px;
 }
 .navigation-left {
   background-color: white;
@@ -130,16 +132,21 @@ li {
 
 /*top-left button*/
 
-.top-left-button {
+.pink-button:link,
+.pink-button:hover,
+.pink-button:visited,
+.pink-button:active {
   color: white;
   background-color: #f26b5d;
   border-right: #f26b5d 1px solid;
   border-bottom: #f26b5d 1px solid;
-  padding: 16px 48px;
+  padding: 16px 45px;
   font-weight: bold;
-  margin: 0;
   margin-left: 100px;
   width: 202px;
+}
+.pink-button:hover {
+  opacity: 0.8;
 }
 
 .horizontal-line {
@@ -149,7 +156,7 @@ li {
 }
 .vertical-line {
   border-left: 1px solid #f26b5d;
-  height: 2000px;
+  height: 3900px;
   margin-left: 100px;
   float: left;
 }
@@ -160,8 +167,15 @@ li {
   font-size: 10pt;
   margin-left: 41%;
   margin-top: 80px;
+  line-height: 25px;
 }
 .images-style {
+  margin-left: 26.5%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 36%;
+}
+.images-wide {
   margin-left: 10%;
   padding-top: 60px;
   padding-bottom: 60px;

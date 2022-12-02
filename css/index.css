@@ -26,6 +26,7 @@ a:active {
   color: #f26b5d;
   text-decoration: none;
 }
+
 /*menu*/
 .menu {
   background-color: white;
@@ -35,7 +36,7 @@ a:active {
   top: 0%;
   left: 0%;
   bottom: 0%;
-  width: 181px;
+  width: 166px;
 }
 #menu-wrap {
   display: none;
@@ -46,9 +47,11 @@ a:active {
 
 ul {
   list-style: none;
+  font-size: 11pt;
+  padding-left: 35px;
 }
 li {
-  padding-top: 20px;
+  padding-top: 22px;
 }
 .navigation-left {
   background-color: white;
@@ -96,10 +99,11 @@ li {
 .mila {
   text-decoration: none;
   color: #454545;
-  margin-right: 30px;
+  margin-right: 10px;
   font-size: 14pt;
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 #contact {
   color: white;
@@ -161,11 +165,26 @@ h2 {
 .pink-button:hover {
   opacity: 0.8;
 }
+@media screen and (max-width: 900px) {
+  .page-content {
+    padding-bottom: 140px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+  .experience_box {
+    display: none;
+  }
+  .box-right {
+    border: none;
+  }
+  .square {
+    display: none;
+  }
+}
 
 .page-content {
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
   height: 100%;
   justify-items: stretch;
   border-bottom: 1px solid #f26b5d;
@@ -176,6 +195,7 @@ h2 {
   padding-left: 60px;
   min-width: 400px;
   padding-right: 80px;
+  flex: 100%;
 }
 
 .box-right {
@@ -192,16 +212,6 @@ h2 {
 .image-left {
   float: left;
   padding: 0;
-}
-.image-color {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.9;
-}
-.image-color:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  opacity: 1;
 }
 .square {
   background-color: transparent;
