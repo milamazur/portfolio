@@ -96,14 +96,11 @@ li {
   color: #454545;
   justify-content: space-between;
 }
-.mila {
+#mila {
   text-decoration: none;
   color: #454545;
-  margin-right: 10px;
+  margin-left: 6.5%;
   font-size: 14pt;
-  display: flex;
-  flex-direction: row;
-  position: relative;
 }
 #contact {
   color: white;
@@ -124,15 +121,16 @@ li {
 
 h2 {
   font-family: futura;
-  padding-left: 15%;
+  padding-left: 17%;
   padding-bottom: 60px;
   padding-right: 0%;
   font-size: 24pt;
   font-weight: bolder;
 }
 .box-left p {
-  padding-left: 15%;
+  padding-left: 17%;
   padding-right: 0%;
+  font-size: 11pt;
 }
 .pink-text {
   color: #f26b5d;
@@ -165,20 +163,29 @@ h2 {
 .pink-button:hover {
   opacity: 0.8;
 }
-@media screen and (max-width: 900px) {
+@media screen and (width <= 900px) {
+  .box-right img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 50px;
+    width: 27%;
+  }
   .page-content {
-    padding-bottom: 140px;
+    padding-bottom: 100px;
     padding-right: 10px;
     flex-direction: column;
   }
-  .experience_box {
+  .experience-box,
+  .square,
+  .vl {
     display: none;
   }
-  .box-right {
-    border: none;
+  .group-images {
+    padding-left: 12%;
   }
-  .square {
-    display: none;
+  .box-left p,
+  h2 {
+    padding-left: 15%;
   }
 }
 
@@ -191,8 +198,7 @@ h2 {
 }
 
 .box-left {
-  padding-top: 120px;
-  padding-left: 60px;
+  padding-top: 110px;
   min-width: 400px;
   padding-right: 80px;
   flex: 100%;
@@ -200,10 +206,14 @@ h2 {
 
 .box-right {
   padding: 0;
-  border-left: 1px solid #f26b5d;
-  border-right: 1px solid #f26b5d;
-  border-top: 1px solid #f26b5d;
   flex-shrink: 0;
+}
+.vl {
+  border-left: 1px solid #f26b5d;
+  height: 651px;
+  margin-right: -1px;
+  float: left;
+  position: absolute;
 }
 .image-right {
   float: right;

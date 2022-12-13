@@ -40,6 +40,7 @@ a:active {
 }
 #menu-wrap:target {
   display: block;
+  z-index: 100;
 }
 
 ul {
@@ -92,14 +93,13 @@ li {
   font-weight: bold;
   color: #454545;
   justify-content: space-between;
+  z-index: 100;
 }
-.mila {
+#mila {
   text-decoration: none;
   color: #454545;
-  margin-right: 30px;
+  margin-left: 6.5%;
   font-size: 14pt;
-  display: flex;
-  flex-direction: row;
 }
 #contact {
   color: white;
@@ -150,44 +150,52 @@ li {
   padding: 16px 60px;
   font-weight: bold;
   margin: 0;
-  margin-left: 100px;
+  margin-left: 7%;
   width: 202px;
 }
 
 .horizontal-line {
   height: 1px;
   background: #f26b5d;
-  margin-left: 100px;
+  margin-left: 7%;
 }
 .vertical-line {
   border-left: 1px solid #f26b5d;
-  height: 4800px;
-  margin-left: 100px;
+  height: 4500px;
+  margin-left: 7%;
   float: left;
 }
 
 .text-block {
-  width: 300px;
   text-align: center;
   font-size: 10pt;
-  margin-left: 41%;
   margin-top: 80px;
   line-height: 12px;
+  margin-bottom: 80px;
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 .images-style {
-  padding-left: 24.5%;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  width: 65%;
+  padding-bottom: 100px;
+  width: 530px;
+  flex-direction: column;
+  z-index: 30;
 }
-figure {
-  padding: 4px;
-  margin: auto;
-}
-figcaption {
-  font-size: 9pt;
-  text-align: right;
-  max-width: 500px;
-  margin: 2px;
-  padding-left: 24.5%;
+
+@media screen and (width <= 750px) {
+  .top-left-button,
+  .horizontal-line {
+    margin-left: 0;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .images-style {
+    width: 78%;
+    padding-bottom: 20%;
+  }
 }

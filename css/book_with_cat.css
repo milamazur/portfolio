@@ -93,13 +93,11 @@ li {
   color: #454545;
   justify-content: space-between;
 }
-.mila {
+#mila {
   text-decoration: none;
   color: #454545;
-  margin-right: 30px;
+  margin-left: 6.5%;
   font-size: 14pt;
-  display: flex;
-  flex-direction: row;
 }
 #contact {
   color: white;

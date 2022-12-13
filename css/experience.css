@@ -95,13 +95,11 @@ li {
   color: #454545;
   justify-content: space-between;
 }
-.mila {
+#mila {
   text-decoration: none;
   color: #454545;
-  margin-right: 30px;
+  margin-left: 6.5%;
   font-size: 14pt;
-  display: flex;
-  flex-direction: row;
 }
 #contact {
   color: white;
@@ -152,19 +150,19 @@ li {
   padding: 16px 48px;
   font-weight: bold;
   margin: 0;
-  margin-left: 100px;
+  margin-left: 7%;
   width: 202px;
 }
 
 .horizontal-line {
   height: 1px;
   background: #f26b5d;
-  margin-left: 100px;
+  margin-left: 7%;
 }
 .vertical-line {
   border-left: 1px solid #f26b5d;
   height: 600px;
-  margin-left: 100px;
+  margin-left: 7%;
   float: left;
 }
 /*experience box*/
@@ -184,25 +182,67 @@ li {
   opacity: 0.8;
 }
 
+@media screen and (width <= 900px) {
+  .box-right img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 50px;
+    width: 27%;
+  }
+  .page-content {
+    padding-bottom: 100px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+  .square,
+  .vertical-line,
+  .vl {
+    display: none;
+  }
+  .group-images {
+    padding-left: 12%;
+  }
+  .box-left p,
+  h2 {
+    padding-left: 15%;
+  }
+  .top-left-button,
+  .horizontal-line {
+    margin-left: 0;
+  }
+}
+
 .page-content {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-items: stretch;
 }
 
 .box-left {
-  padding-top: 120px;
-  padding-left: 80px;
-  min-width: 500px;
+  padding-top: 110px;
+  min-width: 400px;
+  padding-right: 10%;
+  flex: 100%;
+}
+.flexed {
+  display: flex;
+  font-size: 13px;
+}
+.date {
+  white-space: nowrap;
+}
+.text {
+  padding-left: 0px;
 }
 
 .box-right {
   padding: 0;
-  border-left: 1px solid #f26b5d;
-  border-right: 1px solid #f26b5d;
   flex-shrink: 0;
+}
+.vl {
+  border-left: 1px solid #f26b5d;
+  height: 600px;
+  margin-right: -1px;
+  float: left;
+  position: absolute;
 }
 .image-right {
   float: right;
