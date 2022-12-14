@@ -41,7 +41,6 @@ a:active {
 }
 #menu-wrap:target {
   display: block;
-  z-index: 100;
 }
 
 ul {
@@ -92,7 +91,6 @@ li {
   font-weight: bold;
   color: #454545;
   justify-content: flex-end;
-  z-index: 30;
 }
 .mila {
   text-decoration: none;
@@ -148,13 +146,15 @@ li {
   background-color: #f26b5d;
   border-right: #f26b5d 1px solid;
   border-bottom: #f26b5d 1px solid;
-  padding: 16px 60px;
+  padding: 16px 74px;
   font-weight: bold;
   margin: 0;
   margin-left: 7%;
   width: 202px;
 }
-
+p {
+  font-size: 11pt;
+}
 .horizontal-line {
   height: 1px;
   background: #f26b5d;
@@ -162,33 +162,84 @@ li {
 }
 .vertical-line {
   border-left: 1px solid #f26b5d;
-  height: 4500px;
+  height: 1400px;
   margin-left: 7%;
   float: left;
 }
 
 .text-block {
-  text-align: center;
+  width: 460px;
+  text-align: left;
   font-size: 10pt;
+  margin-left: 12%;
+  margin-right: 12%;
   margin-top: 80px;
-  line-height: 12px;
-  margin-bottom: 80px;
+  line-height: 25px;
+  margin-bottom: 70px;
 }
-.images {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 20;
+strong {
+  font-size: 15pt;
+  color: #f26b5d;
 }
-.images-style {
-  padding-bottom: 100px;
-  width: 530px;
-  flex-direction: column;
-  z-index: 0;
+img {
+  width: 300px;
 }
-
-@media screen and (width <= 750px) {
+.page-content {
+  width: 75%;
+}
+.size-letters {
+  font-size: 10pt;
+}
+.use_overflow {
+  overflow: auto;
+  border-top: 1px solid #f26b5d;
+  border-right: 1px solid #f26b5d;
+}
+.use_overflow2 {
+  overflow: auto;
+  border-top: 1px solid #f26b5d;
+  border-right: 1px solid #f26b5d;
+  border-bottom: 1px solid #f26b5d;
+}
+.image1 {
+  width: 28%;
+  float: left;
+  min-width: 150px;
+  padding-right: 20px;
+}
+.image2 {
+  width: 28%;
+  float: right;
+  min-width: 150px;
+  padding-left: 20px;
+}
+.align_right {
+  text-align: right;
+  line-height: 20px;
+  padding-left: 35%;
+  padding-right: 3%;
+}
+.align_left {
+  text-align: left;
+  line-height: 20px;
+  padding-right: 35%;
+  padding-left: 3%;
+}
+@media screen and (width <= 1150px) {
+  .vertical-line {
+    height: 1000px;
+  }
+  .page-content {
+    width: 90%;
+  }
+}
+@media screen and (width <= 850px) {
+  strong {
+    font-size: 12pt;
+    line-height: 18px;
+  }
+}
+@media screen and (width <= 650px) {
   .top-left-button,
   .horizontal-line {
     margin-left: 0;
@@ -196,9 +247,57 @@ li {
   .vertical-line {
     display: none;
   }
-  .images-style {
-    width: 78%;
-    padding-bottom: 20%;
+  .text-block {
+    width: 80%;
+  }
+  .page {
+    margin-bottom: 80px;
+    border-bottom: 0;
+  }
+  .page-content {
+    width: 100%;
+  }
+}
+@media screen and (width > 500px) {
+  .button-menu2 {
+    display: none;
+  }
+}
+@media screen and (width <= 500px) {
+  .navigation-left {
+    display: none;
+  }
+  .page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .navigation-top {
+    margin-left: 0;
+  }
+  .use_overflow,
+  .use_overflow2 {
+    border-left: 1px solid #f26b5d;
+  }
+  #contact {
+    padding: 16px 17px;
+    width: 100px;
+    font-size: 10pt;
+  }
+  .top-left-button {
+    padding: 16px 24px;
+    width: 100px;
+  }
+  .horizontal-line {
+    display: none;
+  }
+  .text-block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .button-menu2 {
+    width: 30px;
+    padding: 0;
+    margin-left: -48px;
   }
 }
 @media screen and (width > 500px) {
@@ -224,22 +323,14 @@ li {
     font-size: 10pt;
   }
   .top-left-button {
-    color: #f26b5d;
-    background-color: transparent;
-    border-right: none;
-    border-bottom: none;
-    padding: 50px 38%;
-    font-weight: bold;
-    margin: 0;
-    margin-left: 0;
-    width: none;
-    text-align: center;
+    padding: 16px 24px;
+    width: 100px;
   }
   .horizontal-line {
     display: none;
   }
   .text-block {
-    margin-top: -20px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   .button-menu2 {
@@ -247,25 +338,18 @@ li {
     padding: 0;
     margin-left: -48px;
   }
-  .box-left {
-    padding-top: 40px;
-    min-width: 400px;
-    padding-right: 30px;
-    margin-left: -20px;
-    padding-bottom: 30px;
-    flex: 100%;
-  }
   h2 {
     font-size: 18pt;
-  }
-  .box-right img {
-    float: left;
-    margin-right: 10px;
-    margin-top: 50px;
-    width: 80%;
   }
   .mila {
     margin-left: -35px;
     font-size: 14pt;
+  }
+  .size-letters {
+    margin: 8px;
+    margin-bottom: 14px;
+  }
+  strong {
+    margin: 8px;
   }
 }
