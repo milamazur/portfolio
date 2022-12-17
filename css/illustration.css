@@ -146,12 +146,23 @@ li {
 
 /*top-left button*/
 
-.top-left-button {
+.top-left-button-illustration {
   color: white;
   background-color: #f26b5d;
   border-right: #f26b5d 1px solid;
   border-bottom: #f26b5d 1px solid;
-  padding: 16px 36px;
+  padding: 16px 50px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 7%;
+  width: 202px;
+}
+.top-left-button-graphic {
+  color: white;
+  background-color: #f26b5d;
+  border-right: #f26b5d 1px solid;
+  border-bottom: #f26b5d 1px solid;
+  padding: 16px 34px;
   font-weight: bold;
   margin: 0;
   margin-left: 7%;
@@ -320,7 +331,8 @@ strong {
   }
 }
 @media screen and (max-width: 650px) {
-  .top-left-button,
+  .top-left-button-graphic,
+  .top-left-button-illustration,
   .horizontal-line {
     margin-left: 0;
   }
@@ -354,8 +366,12 @@ strong {
     font-size: 10pt;
     border-bottom: #f26b5d solid 1px;
   }
-  .top-left-button {
+  .top-left-button-illustration {
     padding: 16px 24px;
+    width: 140px;
+  }
+  .top-left-button-graphic {
+    padding: 16px 10px;
     width: 140px;
   }
   .horizontal-line {
@@ -408,7 +424,13 @@ strong {
   .bottom-text {
     margin-top: 70px;
   }
+  .bottom-text2 {
+    margin-top: 90px;
+  }
   .navigation-top {
     justify-content: space-between;
+  }
+  .size-letters-short {
+    display: none;
   }
 }
