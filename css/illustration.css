@@ -76,6 +76,9 @@ li {
   padding-left: 15px;
   padding-top: 0px;
 }
+.button-menu2 {
+  display: none;
+}
 /*navigation-top*/
 .navigation-top {
   position: fixed;
@@ -258,7 +261,7 @@ strong {
   z-index: 0;
 }
 
-@media screen and (width <= 1150px) {
+@media screen and (max-width: 1150px) {
   .image-flexed1,
   .image-flexed2,
   .image-flexed3 {
@@ -276,7 +279,7 @@ strong {
     width: 100%;
   }
 }
-@media screen and (width <= 850px) {
+@media screen and (max-width: 850px) {
   .align-right {
     margin-left: 0;
     padding-left: 10px;
@@ -297,7 +300,7 @@ strong {
     height: 1400px;
   }
 }
-@media screen and (width <= 750px) {
+@media screen and (max-width: 750px) {
   .align-right {
     margin-left: 0;
     padding: 10px;
@@ -312,13 +315,11 @@ strong {
     font-size: 12pt;
     line-height: 18px;
   }
-  .size-letters,
-  .size-letters1,
-  .bottom-text {
-    font-size: 9pt;
+  .size-letters-short {
+    display: none;
   }
 }
-@media screen and (width <= 650px) {
+@media screen and (max-width: 650px) {
   .top-left-button,
   .horizontal-line {
     margin-left: 0;
@@ -335,12 +336,7 @@ strong {
     border-bottom: 0;
   }
 }
-@media screen and (width > 500px) {
-  .button-menu2 {
-    display: none;
-  }
-}
-@media screen and (width <= 500px) {
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
   .navigation-left {
     display: none;
   }
@@ -356,6 +352,7 @@ strong {
     padding: 16px 17px;
     width: 100px;
     font-size: 10pt;
+    border-bottom: #f26b5d solid 1px;
   }
   .top-left-button {
     padding: 16px 24px;
@@ -372,20 +369,26 @@ strong {
     width: 30px;
     padding: 0;
     margin-left: -48px;
+    display: block;
   }
   h2 {
     font-size: 18pt;
   }
 
   .mila {
-    margin-left: -35px;
-    font-size: 14pt;
+    font-size: 20pt;
+    padding-bottom: 4px;
+    margin-left: -30%;
   }
   .square1,
   .square2,
   .square3 {
     min-width: 100px;
     line-height: 15px;
+  }
+  .image-flexed1,
+  .image-flexed3 {
+    border-left: #f26b5d solid 1px;
   }
   .flexed {
     width: 500px;
@@ -404,5 +407,8 @@ strong {
   }
   .bottom-text {
     margin-top: 70px;
+  }
+  .navigation-top {
+    justify-content: space-between;
   }
 }

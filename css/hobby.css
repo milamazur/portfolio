@@ -75,6 +75,9 @@ li {
   padding-left: 15px;
   padding-top: 0px;
 }
+.button-menu2 {
+  display: none;
+}
 /*navigation-top*/
 .navigation-top {
   position: fixed;
@@ -225,7 +228,7 @@ img {
   padding-right: 35%;
   padding-left: 3%;
 }
-@media screen and (width <= 1150px) {
+@media screen and (max-width: 1150px) {
   .vertical-line {
     height: 1000px;
   }
@@ -233,13 +236,13 @@ img {
     width: 90%;
   }
 }
-@media screen and (width <= 850px) {
+@media screen and (max-width: 850px) {
   strong {
     font-size: 12pt;
     line-height: 18px;
   }
 }
-@media screen and (width <= 650px) {
+@media screen and (max-width: 650px) {
   .top-left-button,
   .horizontal-line {
     margin-left: 0;
@@ -258,12 +261,7 @@ img {
     width: 100%;
   }
 }
-@media screen and (width > 500px) {
-  .button-menu2 {
-    display: none;
-  }
-}
-@media screen and (width <= 500px) {
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
   .navigation-left {
     display: none;
   }
@@ -282,6 +280,7 @@ img {
     padding: 16px 17px;
     width: 100px;
     font-size: 10pt;
+    border-bottom: #f26b5d solid 1px;
   }
   .top-left-button {
     padding: 16px 24px;
@@ -298,52 +297,15 @@ img {
     width: 30px;
     padding: 0;
     margin-left: -48px;
-  }
-}
-@media screen and (width > 500px) {
-  .button-menu2 {
-    display: none;
-  }
-}
-@media screen and (width <= 500px) {
-  .navigation-left {
-    display: none;
-  }
-  .page {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .navigation-top {
-    margin-left: 0;
-  }
-
-  #contact {
-    padding: 16px 17px;
-    width: 100px;
-    font-size: 10pt;
-  }
-  .top-left-button {
-    padding: 16px 24px;
-    width: 100px;
-  }
-  .horizontal-line {
-    display: none;
-  }
-  .text-block {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .button-menu2 {
-    width: 30px;
-    padding: 0;
-    margin-left: -48px;
+    display: block;
   }
   h2 {
     font-size: 18pt;
   }
   .mila {
-    margin-left: -35px;
-    font-size: 14pt;
+    font-size: 20pt;
+    padding-bottom: 4px;
+    margin-left: -30%;
   }
   .size-letters {
     margin: 8px;
@@ -351,5 +313,8 @@ img {
   }
   strong {
     margin: 8px;
+  }
+  .navigation-top {
+    justify-content: space-between;
   }
 }

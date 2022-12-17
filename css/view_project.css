@@ -76,6 +76,9 @@ li {
   padding-left: 15px;
   padding-top: 0px;
 }
+.button-menu2 {
+  display: none;
+}
 /*navigation-top*/
 .navigation-top {
   position: fixed;
@@ -120,18 +123,8 @@ li {
 
 /*main box*/
 
-.box-left p {
-  padding-left: 15%;
-  padding-right: 0%;
-}
 .pink-text {
   color: #f26b5d;
-}
-.maintext-link,
-.maintext-link:link,
-.maintext-link:visited {
-  font-weight: bold;
-  text-decoration: underline;
 }
 .page {
   padding-left: 65px;
@@ -142,7 +135,6 @@ li {
 }
 
 /*top-left button*/
-
 .top-left-button {
   color: white;
   background-color: #f26b5d;
@@ -155,6 +147,23 @@ li {
   width: 202px;
 }
 
+.pink-button:link,
+.pink-button:hover,
+.pink-button:visited,
+.pink-button:active {
+  color: white;
+  background-color: #f26b5d;
+  border-right: #f26b5d 1px solid;
+  border-bottom: #f26b5d 1px solid;
+  padding: 16px 45px;
+  font-weight: bold;
+  margin-left: 7%;
+  width: 202px;
+}
+.pink-button:hover {
+  opacity: 0.8;
+}
+
 .horizontal-line {
   height: 1px;
   background: #f26b5d;
@@ -162,7 +171,43 @@ li {
 }
 .vertical-line {
   border-left: 1px solid #f26b5d;
-  height: 4500px;
+  height: 3900px;
+  margin-left: 7%;
+  float: left;
+}
+.vertical-line-cat {
+  border-left: 1px solid #f26b5d;
+  height: 2100px;
+  margin-left: 7%;
+  float: left;
+}
+.vertical-line-other-illustrations {
+  border-left: 1px solid #f26b5d;
+  height: 5200px;
+  margin-left: 7%;
+  float: left;
+}
+.vertical-line-natalia {
+  border-left: 1px solid #f26b5d;
+  height: 1300px;
+  margin-left: 7%;
+  float: left;
+}
+.vertical-line-littletail {
+  border-left: 1px solid #f26b5d;
+  height: 3100px;
+  margin-left: 7%;
+  float: left;
+}
+.vertical-line-other-designs {
+  border-left: 1px solid #f26b5d;
+  height: 900px;
+  margin-left: 7%;
+  float: left;
+}
+.vertical-line-painting {
+  border-left: 1px solid #f26b5d;
+  height: 4400px;
   margin-left: 7%;
   float: left;
 }
@@ -174,21 +219,50 @@ li {
   line-height: 12px;
   margin-bottom: 80px;
 }
+.text-block p {
+  line-height: 12px;
+}
 .images {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 20;
+  z-index: 0;
 }
 .images-style {
   padding-bottom: 100px;
-  width: 530px;
+  width: 500px;
   flex-direction: column;
-  z-index: 0;
+  z-index: 30;
 }
-
-@media screen and (width <= 750px) {
+.images-wide {
+  padding-bottom: 100px;
+  width: 880px;
+  flex-direction: column;
+  z-index: 30;
+}
+@media screen and (max-width: 1200px) {
+  .images-wide {
+    width: 78%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .vertical-line,
+  .vertical-line-cat,
+  .vertical-line-other-illustrations,
+  .vertical-line-natalia,
+  .vertical-line-littletail,
+  .vertical-line-other-designs,
+  .vertical-line-painting {
+    display: none;
+  }
+  .pink-button:link,
+  .pink-button:hover,
+  .pink-button:visited,
+  .pink-button:active,
+  .horizontal-line {
+    margin-left: 0;
+  }
   .top-left-button,
   .horizontal-line {
     margin-left: 0;
@@ -198,15 +272,10 @@ li {
   }
   .images-style {
     width: 78%;
-    padding-bottom: 20%;
   }
 }
-@media screen and (width > 500px) {
-  .button-menu2 {
-    display: none;
-  }
-}
-@media screen and (width <= 500px) {
+
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
   .navigation-left {
     display: none;
   }
@@ -222,30 +291,23 @@ li {
     padding: 16px 17px;
     width: 100px;
     font-size: 10pt;
+    border-bottom: #f26b5d solid 1px;
   }
-  .top-left-button {
-    color: #f26b5d;
-    background-color: transparent;
-    border-right: none;
-    border-bottom: none;
-    padding: 50px 38%;
-    font-weight: bold;
-    margin: 0;
-    margin-left: 0;
-    width: none;
-    text-align: center;
+  .pink-button {
+    display: none;
   }
   .horizontal-line {
     display: none;
   }
   .text-block {
-    margin-top: -20px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .button-menu2 {
     width: 30px;
     padding: 0;
     margin-left: -48px;
+    display: block;
   }
   .box-left {
     padding-top: 40px;
@@ -258,6 +320,9 @@ li {
   h2 {
     font-size: 18pt;
   }
+  h3 {
+    padding-bottom: 20px;
+  }
   .box-right img {
     float: left;
     margin-right: 10px;
@@ -265,7 +330,14 @@ li {
     width: 80%;
   }
   .mila {
-    margin-left: -35px;
-    font-size: 14pt;
+    font-size: 20pt;
+    padding-bottom: 4px;
+    margin-left: -30%;
+  }
+  .images-wide {
+    padding-bottom: 80px;
+  }
+  .navigation-top {
+    justify-content: space-between;
   }
 }

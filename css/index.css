@@ -77,6 +77,9 @@ li {
   padding-left: 15px;
   padding-top: 0px;
 }
+.button-menu2 {
+  display: none;
+}
 /*navigation-top*/
 .navigation-top {
   position: fixed;
@@ -165,31 +168,6 @@ h2 {
 .pink-button:hover {
   opacity: 0.8;
 }
-@media screen and (width <= 900px) {
-  .box-right img {
-    float: left;
-    margin-right: 10px;
-    margin-top: 50px;
-    width: 27%;
-  }
-  .page-content {
-    padding-bottom: 100px;
-    padding-right: 10px;
-    flex-direction: column;
-  }
-  .experience-box,
-  .square,
-  .vl {
-    display: none;
-  }
-  .group-images {
-    padding-left: 12%;
-  }
-  .box-left p,
-  h2 {
-    padding-left: 15%;
-  }
-}
 
 .page-content {
   display: flex;
@@ -248,12 +226,32 @@ h2 {
 .big-letters {
   font-size: 13pt;
 }
-@media screen and (width > 500px) {
-  .button-menu2 {
+@media screen and (max-width: 900px) {
+  .box-right img {
+    float: left;
+    margin-right: 10px;
+    margin-top: 50px;
+    width: 27%;
+  }
+  .page-content {
+    padding-bottom: 100px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+  .experience-box,
+  .square,
+  .vl {
     display: none;
   }
+  .group-images {
+    padding-left: 12%;
+  }
+  .box-left p,
+  h2 {
+    padding-left: 15%;
+  }
 }
-@media screen and (width <= 500px) {
+@media only screen and (max-device-width: 480px) and (orientation: portrait) {
   .navigation-left {
     display: none;
   }
@@ -269,6 +267,7 @@ h2 {
     padding: 16px 17px;
     width: 100px;
     font-size: 10pt;
+    border-bottom: #f26b5d solid 1px;
   }
   .top-left-button {
     padding: 16px 24px;
@@ -285,6 +284,7 @@ h2 {
     width: 30px;
     padding: 0;
     margin-left: -48px;
+    display: block;
   }
   .box-left {
     padding-top: 40px;
@@ -304,6 +304,11 @@ h2 {
     width: 80%;
   }
   .mila {
-    font-size: 14pt;
+    font-size: 20pt;
+    padding-bottom: 4px;
+    margin-left: -30%;
+  }
+  .navigation-top {
+    justify-content: space-between;
   }
 }
