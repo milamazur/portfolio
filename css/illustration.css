@@ -271,6 +271,10 @@ strong {
   margin-top: -1px;
   z-index: 0;
 }
+.footer {
+  float: right;
+  padding: 10px;
+}
 
 @media screen and (max-width: 1150px) {
   .image-flexed1,
