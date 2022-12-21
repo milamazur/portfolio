@@ -382,6 +382,7 @@ h2 {
   color: #f26b5d;
 }
 input[type="text"],
+input[type="email"],
 select,
 textarea {
   width: 400px;
@@ -662,6 +663,7 @@ strong {
     margin-left: -50px;
   }
   input[type="text"],
+  input[type="email"],
   select,
   textarea {
     width: 125%;
