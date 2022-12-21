@@ -241,6 +241,10 @@ li {
   flex-direction: column;
   z-index: 30;
 }
+.footer {
+  float: right;
+  padding: 10px;
+}
 @media screen and (max-width: 1200px) {
   .images-wide {
     width: 78%;
