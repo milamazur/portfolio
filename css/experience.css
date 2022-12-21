@@ -26,7 +26,7 @@ a:active {
   color: #f26b5d;
   text-decoration: none;
 }
-
+/*menu*/
 /*menu*/
 .menu {
   background-color: white;
@@ -123,19 +123,9 @@ li {
 
 /*main box*/
 
-h2 {
-  font-family: futura;
-  padding-left: 17%;
-  padding-bottom: 60px;
-  padding-right: 0%;
-  font-size: 26pt;
-  font-weight: bolder;
-  font-family: "Jost", sans-serif;
-}
 .box-left p {
-  padding-left: 17%;
+  padding-left: 15%;
   padding-right: 0%;
-  font-size: 11pt;
 }
 .pink-text {
   color: #f26b5d;
@@ -151,6 +141,33 @@ h2 {
   overflow: hidden;
   height: 100%;
   padding-top: 50px;
+  border-bottom: 1px solid #f26b5d;
+}
+
+/*top-left button*/
+
+.top-left-button {
+  color: white;
+  background-color: #f26b5d;
+  border-right: #f26b5d 1px solid;
+  border-bottom: #f26b5d 1px solid;
+  padding: 16px 48px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 7%;
+  width: 202px;
+}
+
+.horizontal-line {
+  height: 1px;
+  background: #f26b5d;
+  margin-left: 7%;
+}
+.vertical-line {
+  border-left: 1px solid #f26b5d;
+  height: 600px;
+  margin-left: 7%;
+  float: left;
 }
 /*experience box*/
 
@@ -168,20 +185,25 @@ h2 {
 .pink-button:hover {
   opacity: 0.8;
 }
-
 .page-content {
   display: flex;
-  justify-content: space-between;
-  height: 100%;
-  justify-items: stretch;
-  border-bottom: 1px solid #f26b5d;
 }
 
 .box-left {
   padding-top: 110px;
   min-width: 400px;
-  padding-right: 80px;
+  padding-right: 10%;
   flex: 100%;
+}
+.flexed {
+  display: flex;
+  font-size: 13px;
+}
+.date {
+  white-space: nowrap;
+}
+.text {
+  padding-left: 0px;
 }
 
 .box-right {
@@ -190,7 +212,7 @@ h2 {
 }
 .vl {
   border-left: 1px solid #f26b5d;
-  height: 651px;
+  height: 600px;
   margin-right: -1px;
   float: left;
   z-index: 20;
@@ -238,8 +260,8 @@ h2 {
     padding-right: 10px;
     flex-direction: column;
   }
-  .experience-box,
   .square,
+  .vertical-line,
   .vl {
     display: none;
   }
@@ -249,6 +271,10 @@ h2 {
   .box-left p,
   h2 {
     padding-left: 15%;
+  }
+  .top-left-button,
+  .horizontal-line {
+    margin-left: 0;
   }
 }
 @media only screen and (max-device-width: 480px) and (orientation: portrait) {
@@ -271,7 +297,7 @@ h2 {
   }
   .top-left-button {
     padding: 16px 24px;
-    width: 100px;
+    width: 150px;
   }
   .horizontal-line {
     display: none;
@@ -289,9 +315,9 @@ h2 {
   .box-left {
     padding-top: 40px;
     min-width: 400px;
-    padding-right: 30px;
+    padding-right: 80px;
     margin-left: -20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     flex: 100%;
   }
   h2 {
@@ -299,9 +325,8 @@ h2 {
   }
   .box-right img {
     float: left;
-    margin-right: 10px;
     margin-top: 50px;
-    width: 80%;
+    width: 90%;
   }
   .mila {
     font-size: 20pt;
